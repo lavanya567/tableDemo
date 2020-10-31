@@ -1,0 +1,29 @@
+<div class="container-fluid w-100 h-100 p-0">
+  <nav class="navbar w-100 p-0 ">
+
+    <!-- p-3 -->
+      <ul class="nav navbar-nav d-flex flex-row w-100  align-vertical">
+          <li class="col-xl-3 col-lg-3 col-sm-10 image-logo">
+            <a (click)="onNavigate('http://www.sbaoi.org/new/index.htm')" style="cursor: pointer;"><img alt="" src="assets\images\logo\sboai.png"></a>
+            <a class="logo-text" >ICBMI - 2020</a>
+            <a (click)="onNavigate('http://www.stermi.org.in/')" style="cursor: pointer;"><img alt="" src="assets\images\logo\stermi.png"></a>
+          </li>
+          <li class="col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="home">Home</a></li>
+          <li class="col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="about-us">About Us</a></li>
+          <li class="col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="abstract">Abstract</a></li> 
+          <li class="col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="committee">Committee</a></li>
+          <li class="col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="speaker">Speakers</a></li>
+          <li class="col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="award">Awards</a></li>
+          <li class="col-xl-1 col-lg-2 col-md-2 col-sm-12" routerLinkActive="active"><a routerLink="contact-us">Contact </a></li>
+           <li class="col-xl-1 col-lg-2 col-md-2 col-sm-12" routerLinkActive="active"><a routerLink="register">Registration</a></li> 
+      </ul>
+
+  </nav>
+  <section class="h-80 w-100">
+      <router-outlet></router-outlet>
+  </section>
+
+  <footer class="app-footer">
+    hiii
+  </footer>
+</div>
