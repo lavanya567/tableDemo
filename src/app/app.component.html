@@ -1,29 +1,63 @@
 <div class="container-fluid w-100 h-100 p-0">
-  <nav class="navbar w-100 p-0 ">
+  <nav class="navbar w-100 p-0">
 
-    <!-- p-3 -->
+  
+    <!-- <div class=""> -->
       <ul class="nav navbar-nav d-flex flex-row w-100  align-vertical">
           <li class="col-xl-3 col-lg-3 col-sm-10 image-logo">
             <a (click)="onNavigate('http://www.sbaoi.org/new/index.htm')" style="cursor: pointer;"><img alt="" src="assets\images\logo\sboai.png"></a>
             <a class="logo-text" >ICBMI - 2020</a>
             <a (click)="onNavigate('http://www.stermi.org.in/')" style="cursor: pointer;"><img alt="" src="assets\images\logo\stermi.png"></a>
           </li>
-          <li class="col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="home">Home</a></li>
-          <li class="col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="about-us">About Us</a></li>
-          <li class="col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="abstract">Abstract</a></li> 
-          <li class="col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="committee">Committee</a></li>
-          <li class="col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="speaker">Speakers</a></li>
-          <li class="col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="award">Awards</a></li>
-          <li class="col-xl-1 col-lg-2 col-md-2 col-sm-12" routerLinkActive="active"><a routerLink="contact-us">Contact </a></li>
-           <li class="col-xl-1 col-lg-2 col-md-2 col-sm-12" routerLinkActive="active"><a routerLink="register">Registration</a></li> 
-      </ul>
+          <li class="highlight col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="home">Home</a></li>
+          <li class="highlight col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="about-us">About Us</a></li>
+          <li class="highlight col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="abstract">Abstract</a></li> 
 
+          <li class="highlight col-xl-1 col-lg-2 col-md-1 col-sm-12 dropdown" routerLinkActive="active">
+              <a class="dropdown-toggle" data-toggle="dropdown">Committee</a>
+            <div class="dropdown-menu" style="text-align: left;">
+              <ul>
+                <li routerLinkActive="active">
+                  <a class="dropdown-item p-0"  style="background-color: white; color:rgb(78, 181, 245);" routerLink="htmlExample">Core Committee</a>
+                </li>
+                <li routerLinkActive="active">
+                  <a class="dropdown-item p-0"  style="background-color: white; color:rgb(78, 181, 245);" routerLink="cssPage">Organising Committee</a>
+                </li>
+                <li routerLinkActive="active">
+                  <a class="dropdown-item p-0"  style="background-color: white; color:rgb(78, 181, 245);" routerLink="javascriptPage">Advisory Committee</a>
+                </li>
+              </ul>
+          </div>
+          </li>
+
+          <li class="highlight col-xl-1 col-lg-2 col-md-1 col-sm-12" routerLinkActive="active"><a routerLink="speaker">Speakers</a></li>
+          <li class="highlight col-xl-1 col-lg-2 col-md-1 col-sm-12 dropdown" routerLinkActive="active">
+            <a class="dropdown-toggle" data-toggle="dropdown">Award</a>
+          <div class="dropdown-menu" style="text-align: left;">
+            <ul>
+              <li routerLinkActive="active">
+                <a class="dropdown-item p-0"  style="background-color: white; color:rgb(78, 181, 245);" routerLink="sbaoi-award">SBAOI Award</a>
+              </li>
+              <li routerLinkActive="active">
+                <a class="dropdown-item p-0"  style="background-color: white; color:rgb(78, 181, 245);" routerLink="award-university">Bharathiar University Award</a>
+              </li>
+            </ul>
+        </div>
+        </li>
+          <li class="highlight col-xl-1 col-lg-2 col-md-2 col-sm-12" routerLinkActive="active"><a routerLink="contact-us">Contact </a></li>
+           <li class="highlight col-xl-1 col-lg-2 col-md-2 col-sm-12" routerLinkActive="active"><a routerLink="register">Registration</a></li> 
+      </ul>
+  
   </nav>
-  <section class="h-80 w-100">
+  <section class="w-100">
       <router-outlet></router-outlet>
   </section>
 
-  <footer class="app-footer">
-    hiii
+  <footer class="app-footer pt-2 pb-2 pl-5">
+    <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12">
+      <h6> © Copyright <b>ICBMI-2020</b>. All Rights Reserved </h6>
+      <span>Designed by <span style="color: #87CEFA;">ABINNOVUS</span></span>
+
+    </div>
   </footer>
 </div>

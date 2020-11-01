@@ -1,0 +1,43 @@
+.chip {
+    display: inline-block;
+    padding: 18px 25px;
+    height: 180px;
+    width:350px;
+    font-size: 16px;
+    line-height: 1rem;
+    border-radius: 10px;
+    background-color: #ebe7e7;
+    text-align: center;
+    position: relative;
+    animation-name: cardexample;
+    animation-duration:4s;
+  }
+  
+  @keyframes cardexample {
+    0%   {left:0px; top:100px;}
+    75%  {left:0px; top:0px;}
+    
+  }
+  
+  .chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  .core{
+    text-align: center;
+    position: relative;
+    animation-name: cardexample;
+    animation-duration:4s;
+    color:rgba(0, 0, 0, 0.747);
+    text-transform: uppercase;
+  }
+
+  .convener{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }

@@ -13,6 +13,9 @@ import { CommitteeComponent } from './committee/committee.component';
 import { ProgramComponent } from './program/program.component';
 import { SpeakerComponent } from './speaker/speaker.component';
 import { RegisterComponent } from './register/register.component';
+import { AwardUniversityComponent } from './award-university/award-university.component';
+import { SbaoiAwardComponent } from './sbaoi-award/sbaoi-award.component';
+import { ChandraAwardComponent } from './chandra-award/chandra-award.component';
 
 
 
@@ -39,6 +42,29 @@ const routes: Routes = [
   path:"committee",
   component:CommitteeComponent,
 },
+{   path:"htmlExample",
+    component:HtmlExampleComponent
+},
+
+ {
+      path:"award-university",
+      component:AwardUniversityComponent
+},
+{
+  path:"sbaoi-award",
+  component:SbaoiAwardComponent,
+},
+    {   path:"chandra-award",
+    component:ChandraAwardComponent
+},
+{
+  path:"cssPage",
+  component:CssPageComponent
+},
+{
+      path:"javascriptPage",
+      component:JavascriptPageComponent
+},
 {
   path:"program",
   component:ProgramComponent,
@@ -55,26 +81,6 @@ const routes: Routes = [
 {
   path:"abstract",
   component:AbstractComponent,
-  children:[
-    {
-      path:"html",
-      component:HtmlComponent,
-      children:[
-        {
-          path:"htmlExample",
-          component:HtmlExampleComponent
-        }
-      ]
-    },
-    {
-      path:"cssPage",
-      component:CssPageComponent
-    },
-    {
-      path:"javascriptPage",
-      component:JavascriptPageComponent
-    }
-  ]
 },
 {
   path:"about-us",

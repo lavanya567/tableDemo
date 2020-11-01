@@ -17,6 +17,9 @@ import { AwardComponent } from './award/award.component';
 import { ProgramComponent } from './program/program.component';
 import { RegisterComponent } from './register/register.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AwardUniversityComponent } from './award-university/award-university.component';
+import { SbaoiAwardComponent } from './sbaoi-award/sbaoi-award.component';
+import { ChandraAwardComponent } from './chandra-award/chandra-award.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SpeakerComponent,
     AwardComponent,
     ProgramComponent,
-    RegisterComponent
+    RegisterComponent,
+    AwardUniversityComponent,
+    SbaoiAwardComponent,
+    ChandraAwardComponent
   ],
   imports: [
     BrowserModule,

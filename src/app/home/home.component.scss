@@ -17,7 +17,7 @@
 
 .container-fluid{
     
-    background-image:url("/assets/images/logo/bg6.jpg");
+    background-image:url("/assets/images/logo/4.jpg");
     // background-color: black;
     padding-right:-100px;
     background-repeat:no-repeat;
@@ -29,16 +29,11 @@
 }
 
 .home-abstract{
-    border: 1px double yellow;
-    display: flex;
+    border: 2px double yellow;
+    background-color: lightslategray;
+    text-shadow: 2px 2px black;
 }
 
-.home-border{
-    width:350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .homepara{
     font-size: 17.5px;
 }
@@ -49,6 +44,7 @@
     text-align: center;
 
 }
+
 
 .glow{
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -67,4 +63,9 @@
       text-shadow: 0 0 20px rgb(48, 46, 46), 0 0 30px #99ff99, 0 0 40px #99ff99, 0 0 50px #e2dfe1, 0 0 60px #99ff99, 0 0 0px #ffffb3;
     }
   }
+
+.organizer-images{
+    width:120px;
+    height:100px;
+}
 
