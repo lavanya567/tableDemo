@@ -20,6 +20,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AwardUniversityComponent } from './award-university/award-university.component';
 import { SbaoiAwardComponent } from './sbaoi-award/sbaoi-award.component';
 import { ChandraAwardComponent } from './chandra-award/chandra-award.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ChandraAwardComponent } from './chandra-award/chandra-award.component';
     RegisterComponent,
     AwardUniversityComponent,
     SbaoiAwardComponent,
-    ChandraAwardComponent
+    ChandraAwardComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,

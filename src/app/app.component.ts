@@ -13,3 +13,12 @@ export class AppComponent {
     window.open(url, '_blank');
 }
 }
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "highlight") {
+    x.className += " responsive";
+  } else {
+    x.className = "highlight";
+  }
+}
