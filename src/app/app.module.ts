@@ -20,8 +20,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AwardUniversityComponent } from './award-university/award-university.component';
 import { SbaoiAwardComponent } from './sbaoi-award/sbaoi-award.component';
 import { ChandraAwardComponent } from './chandra-award/chandra-award.component';
+import { AgmCoreModule } from '@agm/core';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ScheduleComponent } from './schedule/schedule.component';
 
+//import { AgmCoreModule } from '@agm/core';
+import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
+import { BskComponent } from './bsk/bsk.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,14 +46,21 @@ import { ScheduleComponent } from './schedule/schedule.component';
     AwardUniversityComponent,
     SbaoiAwardComponent,
     ChandraAwardComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    BskComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
-  ],
-  providers: [],
+    FontAwesomeModule,
+     AgmCoreModule.forRoot({
+    // apiKey: 'AIzaSyCFtn7jtqOoo77OUXlP2y4Ukj4Nfv_-cKY'
+    apiKey:'AIzaSyDbiqG-oOua70fAUWWcAQpG16uJnHumZ-0'
+   }),
+   AgmSnazzyInfoWindowModule 
+  
+ ],
+  providers: [ {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

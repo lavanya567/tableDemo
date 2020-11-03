@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bootstrapTask';
+  title = 'SBOAI';
   onNavigate(url){
     // your logic here.... like set the url 
    // const url = 'https://zfrmz.in/0F2AEQXcnTMiQhqLJvcj';
